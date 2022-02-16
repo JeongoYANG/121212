@@ -28,4 +28,4 @@ const Join =()=>{
     </>
 }
 
-export default Join;
+export default Join

@@ -18,4 +18,4 @@ const Bmi =()=>{
     </>
 }
 
-export default Bmi;
+export default Bmi

@@ -16,5 +16,4 @@ const Calc =()=>{
     </from>
     </>
 }
-
-export default Calc;
+export default Calc
