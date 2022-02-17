@@ -1,18 +1,24 @@
 import React from "react";
 import styled from "styled-components";
-const Layout =()=>{
+import Header from "./Header";
+import Footer from "./Footer";
+
+export default function Layout({children}){
     return (<div>
         <Table>
+        <thead>
             <Tr>
-                <Td></Td>
+                <Th><Header/></Th>
+            </Tr>
+            </thead>
+            <tbody>
+            <Tr>
+                <Td>{children}</Td>
             </Tr>
             <Tr>
-                <Td></Td>
-
+                <Td><Footer/></Td>
             </Tr>
-            <Tr>
-                <Td></Td>
-            </Tr>
+            </tbody>
         </Table>
         </div>)
 }
@@ -20,14 +26,15 @@ const Table = styled.table`
     border: 1px solid black;
     width: 1000px;
     height: 500px;
-`
+    text-align: center;
+    `
 const Tr = styled.tr`
     border: 1px dotted black
-`
-const Th = styled.th`
+    `
+    const Th = styled.th`
     border: 1px solid black
-`
-const Td = styled.td`
+    `
+    const Td = styled.td`
     border: 1px dotted black
+    
 `
-export default Layout

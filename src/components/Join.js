@@ -1,6 +1,7 @@
 import React from "react";
-const Join =()=>{
-    return (<h1><h1>회원가입</h1>
+import Layout from "../containers/Layout";
+export default function Join(){
+    return (<Layout><h1>회원가입</h1>
     <form>
     <div>
     <label htmlFor="">이름</label><br />
@@ -25,7 +26,6 @@ const Join =()=>{
 
     </div>
     </form>
-    </h1>)
+    </Layout>)
 }
 
-export default Join
